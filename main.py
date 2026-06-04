@@ -449,7 +449,7 @@ if predict:
         st.warning('Please enter a valid engine volume.')
 
     else:
-        pred = float(model_forest.predict(inp_array))
+        pred = model_forest.predict(inp_array)[0]
 
         if pred < 0:  # handeling negative outputs.
             st.error(

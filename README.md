@@ -6,7 +6,6 @@ A Machine Learning web application that predicts the estimated price of a used c
 
 
 ## Application Preview
-
 ![Used Car Price Prediction App](images/app_screenshot.png)
 
 
@@ -75,7 +74,7 @@ To predict a used car price:
 1. Clone the repository.
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/sumanneogi/Car_Price_Prediction.git
 cd Car_Price_Prediction
 ```
 
@@ -94,6 +93,7 @@ streamlit run main.py
 ---
 
 ## Live Demo
+https://car-price-analyzer.streamlit.app/
 
 
 
