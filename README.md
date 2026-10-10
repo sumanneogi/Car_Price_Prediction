@@ -1,39 +1,34 @@
-# 🚗 Used Car Price Prediction 
+# 🚗 Used Car Price Prediction
+
+A **used car price prediction system using machine learning** that estimates a car's price based on features such as brand, model, mileage, engine volume, fuel type, registration status, body type, and manufacturing year. The project uses **Linear Regression and Random Forest Regressor** to learn patterns from car data and predict the estimated selling price based on the features provided by the user.
+
+The main objective of this project is to understand the end-to-end workflow of a machine learning regression problem, including **data cleaning**, handle **missing values and outliers**, perform **exploratory data analysis (EDA)**, **feature engineering**, **model training**, **hyperparameter tuning(`GridSearchCV`)**, and **model evaluation(`MSE`)**. The trained Random Forest model is integrated into a Streamlit web application, allowing users to enter car details and receive an estimated used car price.
+
+> **Note:** This project focuses on a supervised machine learning regression problem. Linear Regression and Random Forest Regressor are trained and evaluated to compare their performance, and the saved Random Forest model is used by the web application to generate price predictions.
 
 
-## Overview
-A Machine Learning web application that predicts the estimated price of a used car based on features such as brand, model, mileage, engine volume, fuel type, registration status, and manufacturing year.
-
-
-## Application Preview
+## 📸 Application Preview
 ![Used Car Price Prediction App](images/app_screenshot.png)
 
 
-## Features
-- Data cleaning and preprocessing
-- Handling missing values and outliers
-- Exploratory Data Analysis (EDA)
-- Feature engineering and categorical encoding
-- Correlation analysis and feature selection
-- Model training using Linear Regression and Random Forest Regressor
-- Hyperparameter tuning with RandomizedSearchCV
-- Model evaluation and performance comparison
-- Interactive Streamlit web application
-- Real-time used car price prediction
+## 🌐 Live Demo
+https://car-price-analyzer.streamlit.app/
 
 
-## Tech Stack
-- Python
-- NumPy
-- Pandas
-- Matplotlib
-- Seaborn
-- Scikit-Learn
-- Joblib
-- Streamlit
+## 🔄 How It Works
+
+1. Load the raw used car dataset and clean and preprocess the data.
+2. Perform exploratory data analysis (EDA) to understand data distributions and relationships between features.
+3. Perform feature engineering and encode categorical features into numerical representations.
+4. Train Linear Regression and Random Forest Regressor models.
+5. Tune Random Forest hyperparameters using `GridSearchCV` and `RandomizedSearchCV`.
+6. Evaluate and compare model performance using appropriate regression evaluation metrics(`MSE`).
+7. Save the trained Random Forest model using `Joblib`.
+8. Integrate the trained model into the Streamlit web application to predict used car prices based on user-provided details.
 
 
-## Project Structure
+## 📂 Project Structure
+
 The project contains the following main files and folders:
 
 * **Data/** – Contains the raw and cleaned datasets used for training and analysis.
@@ -62,39 +57,6 @@ The project contains the following main files and folders:
 * **README.md** – Project documentation and usage instructions.
 
 
-## Usage
-To predict a used car price:
-- Enter the car Mileage, Engine Volume (EngineV), and Manufacturing Year.
-- Select the car Brand, Body Type, Engine Type (Fuel Type), and Registration Status.
-- Choose the corresponding Model for the selected brand.
-- Click **Predict** to get the estimated used car price.
+## 🛠️ Tech Stack
 
-
-## Installation
-1. Clone the repository.
-
-```bash
-git clone https://github.com/sumanneogi/Car_Price_Prediction.git
-cd Car_Price_Prediction
-```
-
-2. Install the required dependencies.
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Run the Streamlit application.
-
-```bash
-streamlit run main.py
-```
-
----
-
-## Live Demo
-https://car-price-analyzer.streamlit.app/
-
-
-
-
+Python · NumPy · Pandas · Matplotlib · Seaborn · Scikit-learn · Joblib · Streamlit
